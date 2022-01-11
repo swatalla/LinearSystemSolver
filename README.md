@@ -27,7 +27,7 @@ mat |> MatrixSystem |> solve PivotStrategy
 where `MatrixSystem` and `PivotStrategy` are discriminated unions defined as
 ```fsharp
 type MatrixSystem =
-    | LinearSystem of float list list * float list //e.g. ax + by = cz, where ax + by and cz are separate lists
+    | LinearSystem of float list list * float list //e.g. ax + by = cz, where [[a, b]] and [c] are separate lists of coefficients
     | AugmentedMatrix of float list list //Matrix in square form, like mat10 above
     | InvalidSystem //Only used internally, will be refactored into a result type
 ```
