@@ -29,7 +29,7 @@ where `MatrixSystem` and `PivotStrategy` are discriminated unions defined as
 type MatrixSystem =
     | LinearSystem of float list list * float list //e.g. ax + by = cz, where ax + by and cz are separate lists
     | AugmentedMatrix of float list list //Matrix in square form, like mat10 above
-    | InvalidSystem
+    | InvalidSystem //Only used internally, will be refactored into a result type
 ```
 and
 ```fsharp
