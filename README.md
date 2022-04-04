@@ -6,7 +6,7 @@ Do not use this library - there are faster, more thorougly tested options.
 Partial pivoting works, but full pivot is still under development.
 
 ## Usage:
-Given a matrix of floats (64),
+Given a matrix of floats (f64),
 ```fsharp
 let mat10 =
     [[2; 3; 4; 5; 5; 4; 2; 7; 9; 6; 4]
